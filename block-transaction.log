@@ -1,0 +1,21 @@
+
+   ErrorException 
+
+  Undefined variable: data
+
+  at E:\veryimportantfile\sheba_trade_admin\app\Http\Controllers\Cron\BlockTransactionCronController.php:62
+     58▕                 $data = blockTransaction::create($formdata);
+     59▕             }
+     60▕                 try {
+     61▕                     $response = array(
+  ➜  62▕                         'data' => $data,
+     63▕                         'status' => 'Data inserted successfully',
+     64▕                     );
+     65▕                 return response()->json($response);
+     66▕             } catch (HttpException $e) {
+
+  1   E:\veryimportantfile\sheba_trade_admin\app\Http\Controllers\Cron\BlockTransactionCronController.php:62
+      Illuminate\Foundation\Bootstrap\HandleExceptions::handleError("Undefined variable: data", "E:\veryimportantfile\sheba_trade_admin\app\Http\Controllers\Cron\BlockTransactionCronController.php")
+
+  2   E:\veryimportantfile\sheba_trade_admin\app\Console\Commands\AddBlockTransactionCommand.php:17
+      App\Http\Controllers\Cron\BlockTransactionCronController::addBlockTransactionByUrl()

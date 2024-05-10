@@ -1,0 +1,33 @@
+live git update process :
+-------------------------------
+git add .
+git commit -m "" // commit your code first
+git checkout development //Development branch
+git pull origin development
+git status
+git checkout [YOUR BRANCH NAME]
+git rebase development
+git status
+git push origin [YOUR BRANCH NAME]
+
+git rebase --continue
+
+php artisan make:controller Api/TopGainerLoserController
+php artisan make:controller Api/TopGainerController
+php artisan make:model Watchlist -mcr
+php artisan make:controller Api/CompanyApiController
+
+php artisan make:model ContestUserType -mcr
+php artisan make:model ContestType -mcr
+php artisan make:model ContestOrganizer -mcr
+php artisan make:model Contest -mcr
+php artisan make:model ContestOrganizer -mcr
+php artisan make:model Prize -mcr
+php artisan make:model UserContest -mcr
+
+php artisan make:model ContestProfile -mcr
+php artisan make:model ContestPortfolio -mcr
+php artisan make:model ContestLedger -mcr
+php artisan make:model ContestVideo -mcr
+
+php artisan make:model Commission -mcr
